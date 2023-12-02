@@ -1,5 +1,5 @@
 export class GiftRegistry {
-  registry = new Map<number, string[]>();
+  private registry = new Map<number, string[]>();
 
   addGift(childId: number, gift: string): void {
     const childGifts = this.registry.get(childId) || [];
